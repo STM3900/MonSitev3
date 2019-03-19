@@ -20,13 +20,41 @@ body{
     align-content: center;
     align-items: center;
 }
+
+#blocintro article{
+    margin-left: 10%;
+}
+
 #blocintro h1{
     color: white;
     text-decoration: none;
     font-family: 'Julius Sans One', sans-serif;
     margin-top: 0px;
-    margin-left: 10%;
     font-size: 80px;
+    margin-bottom: 0px;
+}
+
+#desc{
+    color: white;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 0px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-left: -30px;
+}
+
+.desc{
+    color: white;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 0px;
+    font-size: 25px;
+   
+}
+
+#gros{
+    font-size: 65px;
 }
 
 ::-webkit-scrollbar {
