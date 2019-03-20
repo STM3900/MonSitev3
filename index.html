@@ -14,7 +14,7 @@
         <section id="blocheader">
             <article>
                 <p id="desc"><span class="gros">B</span>onjour ! je suis</p>
-                <h1>Théo Migeat</h1>
+                <h1>Théo Gnocking</h1>
                 <p class="desc">Je fais des sites web mdr</p>
             </article>  
         </section>
@@ -24,5 +24,63 @@
             je prend plaisir à consevoir et réaliser des sites internets avec de plus en plus de fonctionnalités !
         </p>
     </section>
+    <section id="sites">
+        <nav>
+            <section>
+                <p>Mes sites :</p>
+            </section>
+            <article>
+                <img src="images/iconesite/TEMALogo.png" alt="">
+                <img src="images/iconesite/StarLightLogo.png" alt="">
+                <img src="images/iconesite/owo.png" alt="">
+            </article>
+        </nav>
+        <div>
+
+        </div>
+    </section>
 </body>
+    <script>
+    function tabs(selector) {
+        const element = document.querySelector(selector)
+        const buttons = Array.from(element.querySelectorAll('.tab-nav a'))
+        const contents = Array.from(element.querySelectorAll('.tab-content'))
+        console.log(contents.find(el => el.classList.contains('tab-default')))
+        const defaultHash = contents.find(el => el.classList.contains('tab-default'))
+        .id
+
+        let selectedHash = defaultHash
+        console.log(defaultHash)
+
+        const router = {}
+
+        function toggleRoute(hash) {
+        const route = router[hash];
+        if (route) {
+            const { button, content } = route
+        button.classList.toggle('tab-nav-selected')
+        content.classList.toggle('tab-show')
+        }
+        }
+
+        buttons.forEach(button => {
+        const href = button.getAttribute('href').slice(1)
+        router[href] = {
+        button,
+        content: contents.find(el => el.id == href)
+        }
+
+        button.addEventListener('click', e => {
+            toggleRoute(selectedHash);
+        toggleRoute(href)
+        selectedHash = href
+            e.preventDefault()
+        })
+        })
+
+        toggleRoute(selectedHash)
+        }
+
+        tabs('#customTabs')
+    </script>
 </html>
