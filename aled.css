@@ -119,9 +119,72 @@ header{
     height: 150px;
 }
 
-#sites div{
+#sites main{
     margin-left: 20%;
 }
+
+.tabs {
+    background: rgb(250, 250, 250);
+    padding-bottom: 100px;
+  }
+
+.tabs img{
+    height: 150px;
+  }
+  
+.tabs .tab-nav {
+    background-color: #EDF5FC;
+  }
+  
+.tabs .tab-content {
+    display: none;
+    animation-name: fondu;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+  }
+  
+.tabs .tab-content.tab-show {
+    display: block;
+    animation-name: fondu2;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+  }
+  
+.tabs .tab-nav .tab-nav-selected {
+    border-bottom: white solid 3px;
+    transition: border-bottom 0.3s;
+  }
+
+#textetitre{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #141414;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: solid 1px #173753;
+}
+
+#sitegroupe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sitegroupe div{
+    width: 50%
+}
+
+.tamer{
+    margin-left: -200px;
+}
+#sitegroupe p{
+    font-family: 'B612 Mono', monospace;
+    font-size: 25px;
+}
+
+  
 
 ::-webkit-scrollbar {
     width: 10px;
