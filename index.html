@@ -24,18 +24,24 @@
             je prend plaisir à consevoir et réaliser des sites internets avec de plus en plus de fonctionnalités !
         </p>
     </section>
-   <div id="sites">
-        <nav>
-            <section>
-                <p>Mes sites :</p>
-            </section>
-            <article>
-                <img src="images/iconesite/StarLightLogo.png" alt="">
-                <img src="images/iconesite/TEMALogo.png" alt="">
-                <img src="images/iconesite/owo.png" alt="">
-            </article>
+    <section id="customTabs" class="tabs">
+        <nav class="tab-nav">
+            <a href="#tab-myTab"><img src="images/iconesite/StarLightLogo.png" alt=""></a>
+            <a href="#tab-mySecondTab"><img src="images/iconesite/owo.png" alt=""></a>
+            <a href="#tab-tab3"><img src="images/iconesite/TEMALogo.png" alt=""></a>
         </nav>
-   </div>
+        <main>
+            <div id="tab-myTab" class="tab-content tab-default">
+                Mon contenu de tab
+            </div>
+            <div id="tab-mySecondTab" class="tab-content">
+                Mon second contenu de tab
+            </div>
+            <div id="tab-tab3" class="tab-content">
+                Mon 3ème contenu de tab
+            </div>
+        </main>
+    </section>
 </body>
     <script>
     function tabs(selector) {
@@ -45,39 +51,39 @@
         console.log(contents.find(el => el.classList.contains('tab-default')))
         const defaultHash = contents.find(el => el.classList.contains('tab-default'))
         .id
-
+    
         let selectedHash = defaultHash
         console.log(defaultHash)
-
+    
         const router = {}
-
+    
         function toggleRoute(hash) {
-        const route = router[hash];
+            const route = router[hash];
         if (route) {
             const { button, content } = route
-        button.classList.toggle('tab-nav-selected')
-        content.classList.toggle('tab-show')
+            button.classList.toggle('tab-nav-selected')
+            content.classList.toggle('tab-show')
         }
         }
-
+    
         buttons.forEach(button => {
-        const href = button.getAttribute('href').slice(1)
+            const href = button.getAttribute('href').slice(1)
         router[href] = {
-        button,
-        content: contents.find(el => el.id == href)
+            button,
+            content: contents.find(el => el.id == href)
         }
-
+        
         button.addEventListener('click', e => {
             toggleRoute(selectedHash);
-        toggleRoute(href)
-        selectedHash = href
+            toggleRoute(href)
+            selectedHash = href
             e.preventDefault()
         })
         })
-
+        
         toggleRoute(selectedHash)
-        }
-
-        tabs('#customTabs')
+    }
+    
+    tabs('#customTabs')
     </script>
 </html>
