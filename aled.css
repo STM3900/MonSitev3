@@ -88,8 +88,8 @@ header{
     align-items: center;
     align-content: center;
 
-    background: #173753;
-    width: 15vw;
+    background: #151515;
+    width: 10vw;
     height: 100%;
     border-bottom: 2px solid rgb(255, 255, 255);
   }
@@ -116,13 +116,13 @@ header{
   }
 
   .tabs .tab-nav img{
-    height: 150px;
+    height: 100px;
 }
   
   .tabs .tab-content {
     display: none;
     background: rgb(15, 15, 15);
-    width: 85vw;
+    width: 90vw;
     height: 100%;
   }
 
@@ -177,9 +177,51 @@ header{
   }
 
   #tab-myTab{
-    background-image: url("images/illu/StarLightCover.jpg")
+    background-image: url("images/illu/StarLightCover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
+  #tab-mySecondTab{
+    background-image: url("images/illu/lasrillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #tab-tab3{
+    background-image: url("images/illu/temaillu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #tab-mySecondTab h1{
+    color: #173753;
+    border-color: black;
+  }
+  
+  #tab-mySecondTab p{
+    color: black;
+  }
+
+  #tab-tab3 h1{
+    color: #ad1d1d;
+    border-color: black;
+  }
+  
+  #tab-tab3 p{
+    color: black;
+  }
+
+  #tab-tab3 img{
+    transform: scale(1.4);
+  }
+
 
 ::-webkit-scrollbar {
     width: 10px;
