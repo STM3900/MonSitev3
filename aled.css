@@ -1,5 +1,6 @@
 body{
-    margin: 0px
+    margin: 0px;
+    background: rgb(15, 15, 15);
 }
 
 header{
@@ -10,6 +11,31 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+a:link {
+  color: rgb(76, 118, 196);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+a:visited {
+  color: rgb(119, 30, 119);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: #4b577a;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+a:active {
+  color: #1b2236;
+  transition-property: color;
+  transition-duration: 0.3s;
+  border-bottom: solid 4px rgba(73, 81, 111, 0);
 }
 
 #blocheader{
@@ -74,8 +100,22 @@ header{
     margin-right: 10%;
 }
 
+#titresite{
+  background: #151515;
+  color: white;
+}
+
+#titresite p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  padding: 10px;
+}
+
 .tabs {
-    background: rgb(128, 14, 33);
+    background: #151515;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -91,7 +131,6 @@ header{
     background: #151515;
     width: 10vw;
     height: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
   }
 
   .tabs .tab-nav img{
@@ -124,6 +163,7 @@ header{
     background: rgb(15, 15, 15);
     width: 90vw;
     height: 100%;
+    border-radius: 15px;
   }
 
   .tabs .tab-content.tab-show {
@@ -152,7 +192,7 @@ header{
     width: 100%;
   }
 
-  .tabs .tab-content  h1{
+  .tabs .tab-content h1{
     color: white;
     text-decoration: none;
     font-weight: normal;
@@ -222,6 +262,75 @@ header{
     transform: scale(1.4);
   }
 
+  #wakacontact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #wakacontact figure{
+    width: 90vw;
+    background: rgb(243, 243, 243);
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  #wakacontact embed{
+    height: 650px;
+    border: white solid 3px;
+    border-radius: 15px;
+  }
+
+  #wakacontact article{
+    width: 10vw;
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #wakacontact article img{
+    width: 50px;
+    transition: 0.3s;
+  }
+
+  #wakacontact article img:hover{
+    transform: scale(0.9);
+  }
+
+  footer{
+    background: #151515;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  footer a:link{
+    color: white;
+}
+
+  footer a:visited{
+    color :white;
+}
+
+footer a:hover{
+    animation-name: rainbow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -234,4 +343,31 @@ header{
 ::-webkit-scrollbar-thumb {
     background: #1b1b1b;
     border-radius: 4px;
+  }
+
+  @keyframes rainbow {
+    0% {
+      color: white;
+    }
+    12% {
+      color: rgb(50, 75, 185);
+    }
+    25% {
+      color: rgb(64, 192, 64);
+    }
+    37% {
+      color: rgb(241, 241, 64);
+    }
+    50% {
+      color: rgb(209, 42, 42);
+    }
+    62% {
+      color: rgb(241, 241, 64);
+    }
+    75% {
+      color: rgb(64, 192, 64);
+    }
+    87% {
+      color: rgb(50, 75, 185);
+    }
   }
