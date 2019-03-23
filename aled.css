@@ -75,7 +75,7 @@ header{
 }
 
 .tabs {
-    background: pink;
+    background: rgb(128, 14, 33);
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -91,30 +91,94 @@ header{
     background: #173753;
     width: 15vw;
     height: 100%;
-
+    border-bottom: 2px solid rgb(255, 255, 255);
   }
+
+  .tabs .tab-nav img{
+    transition: 0.3s;
+  }
+
+  .tabs .tab-nav img:hover{
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  .tabs .tab-nav .tab-nav-selected img{
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+
+  .tabs .tab-nav p{
+    color: white;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .tabs .tab-nav img{
+    height: 150px;
+}
   
   .tabs .tab-content {
     display: none;
-    background: white;
+    background: rgb(15, 15, 15);
     width: 85vw;
     height: 100%;
   }
 
-  .tabs .tab-nav img{
-      height: 150px;
-  }
-  
   .tabs .tab-content.tab-show {
-    display: block;
-  }
-  
-  .tabs .tab-nav .tab-nav-selected {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
+  .tabs .tab-content article{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 
+  .imagebloc{
+    width: 30%;
+  }
+
+  .textebloc{
+    width: 60%;
+  }
+
+  #titrebloc{
+    width: 100%;
+  }
+
+  .tabs .tab-content  h1{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 70px;
+    margin-top: 0px;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .tabs .tab-content img{
+    display: flex;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tabs .tab-content p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+    color: white;
+  }
+
+  #tab-myTab{
+    background-image: url("images/illu/StarLightCover.jpg")
+  }
   
 
 ::-webkit-scrollbar {
