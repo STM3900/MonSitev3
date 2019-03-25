@@ -394,7 +394,7 @@ footer a:hover{
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1000px) {
     header{
       width: 100%;
       height: 100vh;
@@ -445,6 +445,143 @@ footer a:hover{
     .tabs {
       flex-direction: column;
       height: 100vh;
+    }
+
+    .tabs .tab-nav {
+      flex-direction: row;
+      width: 100vw;
+      height: 10%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .tabs .tab-content {
+      width: 100vw;
+      height: 100%;
+      border-radius: 0px;
+    }
+
+    .tabs .tab-content.tab-show {
+      flex-direction: column;
+    }
+
+    /*POINT DE CONTROLE*/
+
+    .tabs .tab-content article{
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+  
+    .imagebloc{
+      width: 100%;
+    }
+  
+    .textebloc{
+      width: 100%;
+    }
+  
+    #titrebloc{
+      width: 100%;
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+  
+  
+    #titrebloc:hover{
+      transform: scale(0.95);
+      opacity: 1;
+    }
+  
+    .tabs .tab-content h1{
+      color: white;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 8vw;
+      margin-top: 5%;
+    }
+  
+    .tabs .tab-content img{
+      max-width: 30%;
+      height: auto;
+    }
+  
+    .tabs .tab-content img:hover{
+      transform: scale(0.9);
+    }
+  
+    .tabs .tab-content p{
+      font-family: 'Roboto Mono', monospace;
+      font-size: 25px;
+      margin-right: 5%;
+      margin-left: 5%;
+      color: white;
+      text-align: center;
+    }
+
+    /*POINT DE CONTROLE 2*/
+
+    #wakacontact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #wakacontact figure{
+      width: 100vw;
+      background: rgb(243, 243, 243);
+      margin: 0px;
+      border-radius: 0px;
+    }
+  
+    #wakacontact embed{
+      height: 70vw;
+      border: white solid 3px;
+      border-radius: 15px;
+    }
+  
+    #wakacontact article{
+      width: 100vw;
+      background: #151515;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 5%;
+      padding-bottom: 2%;
+    }
+  
+    #wakacontact article img{
+      width: 50px;
+      transition: 0.3s;
+    }
+
+  }
+
+  /*RESPONSIVE NIVEAU TELEPHONE*/
+
+  @media (max-width: 600px) {
+
+    
+    #intro{
+      background: rgb(243, 243, 243);
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+    }
+
+    #intro p{
+      color: #173753;
+      font-size: 28px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    /*POINT DE CONTROLE 4*/
+    .tabs {
+      flex-direction: column;
+      height: 100%;
     }
 
     .tabs .tab-nav {
