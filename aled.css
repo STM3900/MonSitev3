@@ -592,6 +592,10 @@ footer a:hover{
       margin-bottom: 3%;
     }
 
+    .tabs .tab-nav img{
+      height: 16vw;
+  }
+
     .tabs .tab-content {
       width: 100vw;
       height: 100%;
@@ -608,27 +612,7 @@ footer a:hover{
       margin-right: 2%;
       margin-left: 2%;
     }
-  
-    .imagebloc{
-      width: 100%;
-    }
-  
-    .textebloc{
-      width: 100%;
-    }
-  
-    #titrebloc{
-      width: 100%;
-      opacity: 0.7;
-      transition: 0.3s;
-    }
-  
-  
-    #titrebloc:hover{
-      transform: scale(0.95);
-      opacity: 1;
-    }
-  
+
     .tabs .tab-content h1{
       color: white;
       font-family: 'Julius Sans One', sans-serif;
@@ -647,12 +631,13 @@ footer a:hover{
   
     .tabs .tab-content p{
       font-family: 'Roboto Mono', monospace;
-      font-size: 25px;
+      font-size: 5vw;
       margin-right: 5%;
       margin-left: 5%;
       color: white;
       text-align: center;
     }
+
 
     /*POINT DE CONTROLE 2*/
 
@@ -667,6 +652,9 @@ footer a:hover{
       background: rgb(243, 243, 243);
       margin: 0px;
       border-radius: 0px;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
     }
   
     #wakacontact embed{
@@ -688,7 +676,7 @@ footer a:hover{
     }
   
     #wakacontact article img{
-      width: 50px;
+      height: 10vw;
       transition: 0.3s;
     }
 
