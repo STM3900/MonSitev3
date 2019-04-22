@@ -13,7 +13,7 @@ header{
     background-attachment: fixed;
 }
 
-/* POUR LES LIENS DE BASE*/
+/* POUR LES LIENS DE BASE */
 
 a:link {
   color: rgb(76, 118, 196);
@@ -366,6 +366,12 @@ footer a:hover{
     animation-iteration-count: infinite;
 }
 
+/* POUR LES AUTRES PAGES */
+
+
+
+/*-----------------------*/
+
 ::-webkit-scrollbar {
     width: 10px;
     background: #151515;
@@ -480,8 +486,6 @@ footer a:hover{
       flex-direction: column;
     }
 
-    /*POINT DE CONTROLE*/
-
     .tabs .tab-content article{
       margin-right: 2%;
       margin-left: 2%;
@@ -500,7 +504,6 @@ footer a:hover{
       opacity: 0.7;
       transition: 0.3s;
     }
-  
   
     #titrebloc:hover{
       transform: scale(0.95);
@@ -531,8 +534,6 @@ footer a:hover{
       color: white;
       text-align: center;
     }
-
-    /*POINT DE CONTROLE 2*/
 
     #wakacontact{
       display: flex;
@@ -593,7 +594,7 @@ footer a:hover{
       margin-left: 10%;
       margin-right: 10%;
     }
-    /*POINT DE CONTROLE 4*/
+
     .tabs {
       flex-direction: column;
       height: 100%;
@@ -620,8 +621,6 @@ footer a:hover{
     .tabs .tab-content.tab-show {
       flex-direction: column;
     }
-
-    /*POINT DE CONTROLE*/
 
     .tabs .tab-content article{
       margin-right: 2%;
@@ -652,9 +651,6 @@ footer a:hover{
       color: white;
       text-align: center;
     }
-
-
-    /*POINT DE CONTROLE 2*/
 
     #wakacontact{
       display: flex;
