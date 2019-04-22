@@ -13,6 +13,8 @@ header{
     background-attachment: fixed;
 }
 
+/* POUR LES LIENS DE BASE*/
+
 a:link {
   color: rgb(76, 118, 196);
   transition-property: color;
