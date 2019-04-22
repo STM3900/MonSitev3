@@ -234,7 +234,7 @@ a:active {
   }
 
   #tab-myTab{
-    background-image: url("images/illu/StarLightCover.jpg");
+    background-image: url("images/illu/temaillu.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ a:active {
   }
   
   #tab-mySecondTab{
-    background-image: url("images/illu/lasrillu.jpg");
+    background-image: url("images/illu/StarLightCover.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,24 +250,34 @@ a:active {
   }
 
   #tab-tab3{
-    background-image: url("images/illu/temaillu.jpg");
+    background-image: url("images/illu/lasrillu.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
 
-  #tab-mySecondTab h1{
-    color: #173753;
+
+  #tab-myTab h1{
+    color: #ad1d1d;
     border-color: black;
   }
-  
-  #tab-mySecondTab p{
+
+  #tab-myTab p{
     color: black;
   }
 
+  #tab-myTab img{
+    transform: scale(1.4);
+    transition: 0.3s;
+  }
+
+  #tab-myTab img:hover{
+    transform: scale(1.3);
+  }
+
   #tab-tab3 h1{
-    color: #ad1d1d;
+    color: #173753;
     border-color: black;
   }
   
