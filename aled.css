@@ -431,6 +431,44 @@ footer a:hover{
   text-align: center;
 }
 
+.texteintro{
+  color: #173753;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.laboconteneur{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: rox;
+}
+
+.laboconteneur article{
+  width: 40%;
+  transition: 0.3s;
+  height: 350px;
+}
+
+#un{
+  background: red;
+}
+
+#deux{
+  background: green;
+}
+
+#trois{
+  background: blue;
+}
+
 /*-----------------------*/
 
 ::-webkit-scrollbar {
