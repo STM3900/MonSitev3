@@ -448,25 +448,71 @@ footer a:hover{
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  flex-direction: rox;
+  flex-direction: row;
+}
+
+.laboconteneur i{
+  color: white;
+  font-size: 100px;
+}
+
+.laboconteneur p{
+  color: white; 
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 
 .laboconteneur article{
-  width: 40%;
-  transition: 0.3s;
+  display: flex;
+  width: 350px;
   height: 350px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 20px;
+  transition: 0.3s;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.laboconteneur article:hover{
+  border-radius: 75px;
+  transform: scale(0.98);
+}
+
+.laboconteneur article:hover p{
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 #un{
-  background: red;
+  background: rgba(255, 0, 0, 0.671);
+  transition: 0.3s;
+  border-color: red;
+}
+
+#un:hover{
+  background: rgba(255, 0, 0, 0.781);
 }
 
 #deux{
   background: green;
+  border-color: green;
 }
 
 #trois{
   background: blue;
+  border-color: blue;
+}
+
+#quatre{
+  background: yellow;
+  border-color: yellow;
 }
 
 /*-----------------------*/
