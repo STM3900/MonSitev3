@@ -462,14 +462,15 @@ footer a:hover{
   font-family: 'Montserrat', sans-serif;
   transition: opacity 0.3s;
   opacity: 0;
+  text-align: center;
 }
 
 .laboconteneur article{
   display: flex;
-  width: 350px;
-  height: 350px;
-  margin-right: 5%;
-  margin-left: 5%;
+  width: 300px;
+  height: 300px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   margin-top: 5%;
   border-radius: 20px;
   transition: 0.3s;
