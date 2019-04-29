@@ -422,7 +422,22 @@ footer a:hover{
   margin-left: 3vw;
 }
 
+#sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .titre{
+  color: #173753;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+.titregros{
   color: #173753;
   text-decoration: none;
   font-weight: normal;
@@ -458,7 +473,7 @@ footer a:hover{
 
 .laboconteneur p{
   color: white; 
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   transition: opacity 0.3s;
   opacity: 0;
@@ -478,12 +493,12 @@ footer a:hover{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid black;
 }
 
 .laboconteneur article:hover{
   border-radius: 75px;
   transform: scale(0.98);
+  cursor: pointer;
 }
 
 .laboconteneur article:hover p{
@@ -491,29 +506,101 @@ footer a:hover{
   transition: opacity 0.3s;
 }
 
-#un{
-  background: rgba(255, 0, 0, 0.671);
-  transition: 0.3s;
-  border-color: red;
+.laboconteneur a{
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-#un:hover{
+#rouge{
+  background: rgba(255, 0, 0, 0.822);
+}
+
+#rouge:hover{
   background: rgba(255, 0, 0, 0.781);
 }
 
-#deux{
-  background: green;
-  border-color: green;
+#bleu{
+  background: #2168a7;
 }
 
-#trois{
-  background: blue;
-  border-color: blue;
+#vert{
+  background: rgb(17, 153, 17);
 }
 
-#quatre{
-  background: yellow;
-  border-color: yellow;
+#jaune{
+  background: rgb(255, 221, 30);
+}
+
+.top{
+  margin-top: 5%;
+}
+/*------------POUR LA PAGE CONVERTISSEUR-----------*/
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+form article{
+  width: 50%;
+}
+
+form p{
+  color: black; 
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  transition: opacity 0.3s;
+  opacity: 1;
+  text-align: left;
+}
+
+input[type*="e"]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  color: rgb(53, 53, 53);
+  text-transform: uppercase;
+  border: 2px solid #555555;
+  transition: 0.3s;
+  outline: none;
+  font-style: italic;
+}
+
+input[type*="e"]:focus{
+  border: 2px solid #3975ad;
+  border-radius: 25px;
+}
+#bouton{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6aabe9;
+  border: solid 2px #6aabe9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-right: 25%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  color: white;
+  
+  transition: 0.3s;
+}
+
+#bouton:hover{
+    background-color: white;
+    color: black;
+    padding-right: 30%;
+    cursor: pointer;
 }
 
 /*-----------------------*/
@@ -715,6 +802,21 @@ footer a:hover{
     #wakacontact article img{
       width: 50px;
       transition: 0.3s;
+    }
+
+    .laboconteneur p{
+      opacity: 1;
+    }
+
+    .titregros{
+      margin-right: 5%;
+      margin-left: 5%;
+      font-size: 8vw;
+      text-align: center;
+    }
+
+    form article{
+      width: 70%;
     }
 
   }
