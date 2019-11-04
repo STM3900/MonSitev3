@@ -578,6 +578,7 @@ input[type*="e"]:focus{
   border: 2px solid #3975ad;
   border-radius: 25px;
 }
+
 #bouton{
   text-decoration: none;
   display: flex;
